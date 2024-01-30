@@ -72,7 +72,7 @@ if __name__ == '__main__':
         if choice == '6':
             fahren_cel()
 
-        answer = input('Do you want to exit? (y) for yes ')
-        if answer == 'y':
+        answer = input('Do you want to exit? (y)')
+        if answer == 'y' or answer == '':
             break
 
