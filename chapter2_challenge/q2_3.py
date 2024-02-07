@@ -54,11 +54,24 @@ if __name__ == "__main__":
     #     plt.show()
 
     # list of three different initial velocity
-    u_list = [20, 40, 60]
-    theta = 45
-    for u in u_list:
+    # u_list = [20, 40, 60]
+    # theta = 45
+    # for u in u_list:
+    #     draw_trajectory(u, theta)
+
+    num_trajectories = int(input('How many trajectories?: '))
+    # degree_list = [0]*num_trajectories
+    # velocity_list = [0]*num_trajectories
+    legend_list = []
+
+    for ti in range(num_trajectories):
+        # degree_list[ti] = int(input('Enter the initial velocity for trajectory 1 (m/s): ', ti+1))
+        # velocity_list[ti] = int(input('Enter the angle of projection for trajectory $d (degree): ', ti+1))
+        u = int(input('Enter the initial velocity for trajectory {0} (m/s): '.format(ti+1)))
+        theta = int(input('Enter the angle of projection for trajectory %d (degree): '.format(ti+1)))
+        legend_list.append(str(u))
         draw_trajectory(u, theta)
 
     # Add a legend and show the graph
-    plt.legend(['20', '40', '60'])
+    plt.legend(legend_list)
     plt.show()
