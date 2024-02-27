@@ -68,7 +68,7 @@ def scatter_plot(x, y):
 if __name__ == '__main__':
     lol, tier = read_csv('lol_tier_relation.csv')
     x = [1]
-    corr_flag, corr = find_corr_x_y(lol, x)
+    corr_flag, corr = find_corr_x_y(lol, tier)
     if corr_flag:
         print('Highest correlation: {0}'.format(corr))
         scatter_plot(lol, tier)
