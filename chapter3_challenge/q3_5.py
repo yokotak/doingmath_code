@@ -30,4 +30,3 @@ def create_classes(numbers, n):
 
 if __name__ == "__main__":
     data = read_data("marks.txt")
-7
